@@ -15,4 +15,5 @@ main()
 	{
 		printf("\nstring is not palindrom");
 	}
+	break;
 }
