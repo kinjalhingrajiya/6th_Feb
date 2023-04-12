@@ -1,30 +1,20 @@
 #include<iostream>
 using namespace std;
-class multiplication				//class creation
-{
-	public:								//access modofier
-	int a,b;							//member variable declaration
-	multiplication(int a,int b)			//constrctor creation
-	{
+inline multiplication(int a,int b)				//inline function 
+{		
 		cout<<"Enter Value of a and b:";		
 		cin>>a>>b;
 		cout<<"\nMultiplication="<<a*b;				//multiplition print
 	}
-};
-class cubic						//class creation
-{
-	public:						//access modofier
-	int c;						//member variable declaration
-	cubic(int c)				//constrctor creation
-	{
-	cout<<"\nEnter Value of c:";
-	cin>>c;
-	cout<<"cube="<<c*c;				//cubic value print
+inline cube(int a)				//inline function 
+{		
+		cout<<"\nEnter Value of a:";		
+		cin>>a;
+		cout<<"\ncube:"<<a*a*a;				//cube print
 	}
-};
 main()
 {
-	int a,b,c;
-	multiplication m1(a,b);			//class object creation
-	cubic c1(c);					//class object creation
+	int a,b;
+	multiplication(a,b);			//function calling
+	cube (a);					//Function calling
 }
